@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f0f0; text-align: center; }
+        .chat-container { background: white; padding: 20px; width: 400px; margin: 50px auto; border-radius: 10px; }
+        input[type=text] { width: 80%; padding: 10px; }
+        button { padding: 10px 15px; }
+        .response { margin-top: 20px; background: #e0e0ff; padding: 10px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>🤖 AI Chatbot</h2>
+        <form method="POST">
+            <input type="text" name="message" placeholder="Type your message..." required>
+            <button type="submit">Send</button>
+        </form>
+
+        {% if bot_response %}
+            <div class="response">
+                <strong>Bot:</strong> {{ bot_response }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
