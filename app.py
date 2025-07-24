@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # ✅ Path for log file
 LOG_FILE = "chat_logs.txt"
-
+#test
 def save_chat_log(user_message, bot_response):
     """
     Save the conversation to a text file (chat_logs.txt)
